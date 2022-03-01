@@ -29,6 +29,7 @@ local setmap    = keymap.set_map
       },
     }
     setmap('n','\\ls', '<CMD>SymbolsOutline<CR>', {noremap = true})
+    setmap('n','<M-7>', '<CMD>SymbolsOutline<CR>', {noremap = true})
   end
 
 
