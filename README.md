@@ -1,7 +1,7 @@
 # 我的 neovim 配置
 
-注意此配置主要在 mac 上使用，在其它系统上会有键位冲突，如有需要请到 `lua.core/mapping.lua` 里修改
-添加了 neovide 配置，即 GUI
+* 注意此配置主要在 mac 上使用，在其它系统上会有键位冲突，如有需要请到 `lua.core/mapping.lua` 里修改
+* 添加了 neovide 配置，即 GUI
 
 ### 安装依赖
 
