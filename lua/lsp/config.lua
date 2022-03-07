@@ -2,8 +2,7 @@ local global = require('core.global')
 local keymap = require(global.mapping_bind)
 local config = {}
 
-local setmap    = keymap.set_map
-
+local setmap = keymap.set_map
 
   function config.lsp()
     vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(

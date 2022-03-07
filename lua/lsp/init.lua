@@ -16,4 +16,3 @@ lsp.rust_analyzer() -- rust
 plugins.lsp()
 plugins.symbols_outline()
 plugins.trouble()
-
