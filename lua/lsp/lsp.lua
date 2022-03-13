@@ -10,10 +10,6 @@ local capabilities = vim.lsp.protocol.make_client_capabilities()
 capabilities.textDocument.completion.completionItem.snippetSupport = true
 capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
 
-lsp.vimls.setup{
-  on_attach = require("aerial").on_attach,
-}
-
 local servers = {
   'clangd',
   'jedi_language_server',
