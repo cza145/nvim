@@ -1,9 +1,9 @@
 -------- neovide gui 设置 --------
 
-vim.opt.guifont="Cousine Nerd Font Mono" -- 字体
+vim.opt.guifont="Cousine Nerd Font Mono:h20" -- 字体
 
 local neovide_option = {
-  refresh_rate  = 60,    -- 刷新率
+  refresh_rate  = 120,   -- 刷新率
   transparency  = 1.0,   -- 透明度
   no_idle       = false,
   fullscreen    = false, -- 全屏
