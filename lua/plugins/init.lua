@@ -14,6 +14,7 @@ local plugins_config_list = {
   'toggleterm',
   'choosewin',
   'telescope',
+  'xkbswitch',
   'stylish'
 }
 
