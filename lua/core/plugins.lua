@@ -28,6 +28,7 @@ return require('packer').startup({function()
   use "ellisonleao/glow.nvim"         -- 终端浏览markdown
   use 'folke/todo-comments.nvim'      -- TODO
   use 'sunjon/stylish.nvim'           -- UI
+  use 'lyokha/vim-xkbswitch'
 
   -------- 暂未配置
   use 'phaazon/hop.nvim' -- 字符操作和跳转
@@ -62,6 +63,7 @@ return require('packer').startup({function()
     },
     run = ":TSUpdate"
   }
+
   use {'hrsh7th/nvim-cmp', -- 补全
     requires = {
       'ray-x/cmp-treesitter', -- treesitter
