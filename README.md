@@ -12,6 +12,7 @@
 * 安装 python 并安装 Python 依赖
   * `python3 -m pip install --user --upgrade pynvim`
 * 安装 [Glow](https://github.com/charmbracelet/glow) 浏览 markdown
+* 安装中英文切换插件的依赖(仅适用macos) [input-source-switcher](https://github.com/vovkasm/input-source-switcher)
 
 ### tip
 
