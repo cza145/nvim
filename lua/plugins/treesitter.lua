@@ -8,15 +8,6 @@ local set_map = keymap.set_map
 
 set_map('n','\\t=','<Esc>ggvG=',{noremap = true})
 
-parser_config.org = {
-  install_info = {
-    url = 'https://github.com/milisims/tree-sitter-org',
-    revision = 'f110024d539e676f25b72b7c80b0fd43c34264ef',
-    files = {'src/parser.c', 'src/scanner.cc'},
-  },
-  filetype = 'org',
-}
-
 require'nvim-treesitter.configs'.setup {
   ------ 启动代码高亮
   highlight = {
@@ -61,6 +52,7 @@ require'nvim-treesitter.configs'.setup {
     'lua',
     'org',
     'query',
+    'rst',
     'rust',
     'ruby',
     'toml',
