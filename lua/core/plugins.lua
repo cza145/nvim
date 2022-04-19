@@ -31,7 +31,6 @@ return require('packer').startup({function()
   use 'lyokha/vim-xkbswitch'
 
   -------- 暂未配置
-  use 'phaazon/hop.nvim' -- 字符操作和跳转
   use {'kevinhwang91/nvim-bqf', ft = 'qf'} -- 搜索字符
   use 'nathom/filetype.nvim'          -- 加快打开文件速度
   use 'lewis6991/impatient.nvim'      -- 提高加载lua的速度
