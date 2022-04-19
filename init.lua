@@ -2,7 +2,7 @@
 local global = require('core.global')
 
 -- Leader
-vim.g.mapleader = "e";
+--vim.g.mapleader = "e";
 
 require(global.options)          -- 基本设置
 require(global.packer)           -- 插件管理器
