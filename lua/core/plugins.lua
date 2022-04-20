@@ -45,6 +45,7 @@ return require('packer').startup({function()
       'sindrets/diffview.nvim',
     },
   }
+
   use {'nvim-orgmode/orgmode',  -- org mode
     requires = {
       'dhruvasagar/vim-table-mode',
