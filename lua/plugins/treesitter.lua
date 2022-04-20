@@ -2,7 +2,6 @@ require('orgmode').setup_ts_grammar()
 
 local global = require('core.global')
 local keymap = require(global.mapping_bind)
-local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
 
 local set_map = keymap.set_map
 
@@ -50,6 +49,7 @@ require'nvim-treesitter.configs'.setup {
     'latex',
     'llvm',
     'lua',
+    'markdown',
     'org',
     'query',
     'rst',
