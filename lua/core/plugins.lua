@@ -28,7 +28,7 @@ return require('packer').startup({function()
   use "ellisonleao/glow.nvim"         -- 终端浏览markdown
   use 'folke/todo-comments.nvim'      -- TODO
   use 'sunjon/stylish.nvim'           -- UI
-  use 'lyokha/vim-xkbswitch'
+  use 'lyokha/vim-xkbswitch'          -- 中文切换
 
   -------- 暂未配置
   use {'kevinhwang91/nvim-bqf', ft = 'qf'} -- 搜索字符
