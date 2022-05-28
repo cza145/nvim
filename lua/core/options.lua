@@ -133,7 +133,7 @@ local bw_local  = {
   tabstop        = 2;    -- 设置 Tab 键宽度
   shiftwidth     = 2;    -- 换行时的自动缩进列数
   softtabstop    = -1;   -- 修改 Tab 键行为
-  conceallevel   = 2;    --  设置隐藏字符，正常显示显示隐藏文本
+  conceallevel   = 0;    --  设置隐藏字符，正常显示显示隐藏文本
   formatoptions  = "1jcroql";    -- 设置文本格式化的格式
   breakindentopt = "shift:2," .. -- 设置自动换行的格式
                    "min:20";
