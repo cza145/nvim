@@ -16,6 +16,9 @@ local map = {
   {'n',  '<Space>bp',   '<CMD>:bprevious<CR>'},
   {'n',  '<Space>bs',   '<CMD>:buffers<CR>'},
   -- Tab
+  {'n',  '<Space>1',    '<Esc>:tabn 1<CR>'},
+  {'n',  '<Space>2',    '<Esc>:tabn 2<CR>'},
+  {'n',  '<Space>3',    '<Esc>:tabn 3<CR>'},
   {'n',  '<Space>te',   '<CMD>:tabe<CR>'},
   {'n',  '<Space>tt',   '<Esc>:tabn '},
   {'n',  '<Space>tq',   '<Esc>:tabc '},

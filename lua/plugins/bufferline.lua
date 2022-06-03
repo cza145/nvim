@@ -1,8 +1,6 @@
 require("bufferline").setup{
   options = {
-    numbers = function(opts)
-      return opts.id
-    end,
+    numbers = "buffer_id",
     diagnostics = "false", -- "nvim_lsp" || "coc" ||"false"
     --mappings = true,
     close_command = "bdelete! %d",
