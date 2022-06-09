@@ -15,7 +15,7 @@ function global:load_variables()
   -- data 路径
   self.data       = data .. '/'             -- 用于存放数据文件
   self.cache_dir  = data .. '.cache/'       -- 用于存放数据文件
-  self.directory  = data .. 'packer/opt/'   -- 插件路径
+  self.directory  = data .. 'site/pack/packer/opt/'   -- 插件路径
   self.lsp_path   = data .. 'lsp_servers/'  -- lsp  路径
   self.debug_path = data .. 'debug/'        -- debug 路径
 
