@@ -56,7 +56,9 @@ return require('packer').startup({function()
   }
   use { 'michaelb/sniprun',     -- 执行代码块
     run = 'bash ./install.sh'}
-  use {'nvim-treesitter/nvim-treesitter', -- 语法高亮
+
+  -- 语法高亮
+  use {'nvim-treesitter/nvim-treesitter',
     requires = {
       'p00f/nvim-ts-rainbow', -- 彩虹括号
       'nvim-treesitter/nvim-treesitter-refactor', -- 智能定义
@@ -96,7 +98,7 @@ return require('packer').startup({function()
       'simrat39/symbols-outline.nvim',   -- 显示参数列表并修改
       'folke/trouble.nvim',              -- error warn 列表
       'ray-x/lsp_signature.nvim',        -- 显示函数的参数
-      'tami5/lspsaga.nvim'             -- 提供各种动作的UI
+      'tami5/lspsaga.nvim'               -- 提供各种动作的UI
     },
   }
   use 'folke/which-key.nvim' -- 快捷键帮助，建议放到最后
