@@ -14,6 +14,7 @@ local plugins_config_list = {
   'choosewin',
   'telescope',
   'xkbswitch',
+  'neo_tree',
 }
 
 for _,m in ipairs(plugins_config_list) do
