@@ -5,7 +5,7 @@ require('lsp.config')
 -- 补全
 require('lsp.plugins.cmp')
 -- 动作 UI
-require('lsp.plugins.spsaga')
+require('lsp.plugins.lspsaga')
 -- 参数列表
 require('lsp.plugins.symbols_outline')
 -- 错误列表
