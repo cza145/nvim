@@ -30,15 +30,8 @@ return require('packer').startup({function()
   use 'sunjon/stylish.nvim'           -- UI
   use 'lyokha/vim-xkbswitch'          -- 中文切换
 
-  -------- 暂未配置
-  use {'kevinhwang91/nvim-bqf', ft = 'qf'} -- 搜索字符
   use 'nathom/filetype.nvim'          -- 加快打开文件速度
   use 'lewis6991/impatient.nvim'      -- 提高加载lua的速度
-  use {'hoschi/yode-nvim',
-    requires = {
-      'nvim-lua/plenary.nvim'
-    }
-  }
 
   use {'TimUntersberger/neogit', -- neogit
     requires = {
