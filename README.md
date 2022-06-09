@@ -6,7 +6,7 @@
 ### 安装依赖
 
 * 安装 lsp
-  * `lua/core/global` 中的 `lsp.cmd`需要修改
+  * `lua/core/global.lua` 中的 `lsp.cmd`需要修改
 * 需要下载安装 [tree-sitter](https://github.com/tree-sitter/tree-sitter)
 * 需要使用特定字体 [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) ，否则一些特殊字符会显示不正常
 * 安装 python 并安装 Python 依赖
