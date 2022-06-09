@@ -24,7 +24,6 @@ return require('packer').startup({function()
   use 't9md/vim-choosewin'            -- 多屏跳转以及切换标签
   use 'glepnir/galaxyline.nvim'       -- 状态栏
   use 'akinsho/bufferline.nvim'       -- buffer栏
-  use 'nvim-telescope/telescope.nvim' -- 搜索
   use "ellisonleao/glow.nvim"         -- 终端浏览markdown
   use 'folke/todo-comments.nvim'      -- TODO
   use 'sunjon/stylish.nvim'           -- UI
@@ -67,6 +66,17 @@ return require('packer').startup({function()
         "MunifTanjim/nui.nvim",
       }
     }
+
+  -- 搜索
+  use {'nvim-telescope/telescope.nvim',
+    requires = {
+      'nvim-telescope/telescope-live-grep-args.nvim',
+      'nvim-telescope/telescope-file-browser.nvim',
+      'nvim-telescope/telescope-ui-select.nvim',
+      'nvim-telescope/telescope-symbols.nvim',
+      'nvim-telescope/telescope-packer.nvim',
+    }
+  }
 
   use 'puremourning/vimspector'       -- debug
   --use {'mfussenegger/nvim-dap',         -- debug
