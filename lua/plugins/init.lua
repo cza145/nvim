@@ -10,6 +10,7 @@ local plugins_config_list = {
   'glow',
   'orgmode',
   'vimspector',
+  --'dap',
   'treesitter',
   'toggleterm',
   'choosewin',

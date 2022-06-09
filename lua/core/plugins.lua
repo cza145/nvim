@@ -1,4 +1,4 @@
--- 加载路径
+-- 加载路径plugin
 return require('packer').startup({function()
   -- if packer == nil then
   -- 	packer = require('packer')
@@ -22,7 +22,6 @@ return require('packer').startup({function()
   use 'norcalli/nvim-colorizer.lua'   -- 荧光笔
   use 'akinsho/toggleterm.nvim'       -- 终端
   use 't9md/vim-choosewin'            -- 多屏跳转以及切换标签
-  use 'puremourning/vimspector'       -- debug
   use 'glepnir/galaxyline.nvim'       -- 状态栏
   use 'akinsho/bufferline.nvim'       -- buffer栏
   use 'nvim-telescope/telescope.nvim' -- 搜索
@@ -65,14 +64,24 @@ return require('packer').startup({function()
     run = ":TSUpdate"
   }
 
+  use 'puremourning/vimspector'       -- debug
+  --use {'mfussenegger/nvim-dap',         -- debug
+  --  requires = {
+  --    'rcarriga/nvim-dap-ui',
+  --    'Pocco81/dap-buddy.nvim',
+  --    'theHamsta/nvim-dap-virtual-text',
+  --    'mfussenegger/nvim-dap-python', --python
+  --  }
+  --}
+
   use {'hrsh7th/nvim-cmp', -- 补全
     requires = {
+      'neovim/nvim-lspconfig',--lsp
       'ray-x/cmp-treesitter', -- treesitter
       'hrsh7th/cmp-emoji',    -- emoji补全
       'hrsh7th/cmp-buffer',   -- buffer补全
       'hrsh7th/cmp-path',     -- 路径补全
       'L3MON4D3/LuaSnip',     -- 模板
-      'rafamadriz/friendly-snippets',
       'saadparwaiz1/cmp_luasnip',
       'hrsh7th/cmp-nvim-lsp', -- lsp
       'onsails/lspkind-nvim', -- 补全窗口主题

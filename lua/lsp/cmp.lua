@@ -20,14 +20,17 @@ cmp.setup {
     completeopt = 'menu,menuone,noinsert',
     keyword_length = 2,
   },
+  window = { -- 补窗口边框
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
   experimental = {
     ghost_text = true,
     native_menu = false,
   },
   mapping = {
-    ["<Esc>"]     = cmp.mapping.close(),            -- 关闭补全窗口
-    ["<C-Space>"] = cmp.mapping.complete(),
-    ["<CR>"] = cmp.mapping(function(fallback)
+    ["<Esc>"] = cmp.mapping.close(),            -- 关闭补全窗口
+    ["<CR>"]  = cmp.mapping(function(fallback)
       if cmp.visible() and cmp.confirm(cmp.confirm_opts) then
         if cmp_setting.jumpable() then
           luasnip.jump(1)
