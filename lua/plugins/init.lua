@@ -1,6 +1,4 @@
 -- 加载路径
-local global = require('core.global')
-local config = global.plugins_config .. '.'
 
 local plugins_config_list = {
   'neogit',
@@ -16,9 +14,8 @@ local plugins_config_list = {
   'choosewin',
   'telescope',
   'xkbswitch',
-  'stylish'
 }
 
 for _,m in ipairs(plugins_config_list) do
-  require(config .. m)
+  require('plugins.' .. m)
 end

@@ -1,7 +1,8 @@
-local cmp     = {}
+local cmp = require('cmp')
+local luasnip = require('luasnip')
+local lspkind = require('lspkind')
 
-
-function cmp.jumpable(dir)
+local function jumpable(dir)
   local luasnip_ok, luasnip = pcall(require, "luasnip")
   if not luasnip_ok then
     return
@@ -98,13 +99,13 @@ function cmp.jumpable(dir)
 end
 
 
-function cmp.check_backspace()
+local function check_backspace()
   local col = vim.fn.col "." - 1
   return col == 0 or vim.fn.getline("."):sub(col, col):match "%s"
 end
 
 
-function cmp.is_emmet_active()
+local function is_emmet_active()
   local clients = vim.lsp.buf_get_clients()
 
   for _, client in pairs(clients) do
@@ -115,4 +116,88 @@ function cmp.is_emmet_active()
   return false
 end
 
-return cmp
+
+-- cmp config
+cmp.setup {
+  confirm_opts = {
+    behavior = cmp.ConfirmBehavior.Replace,
+    select = false,
+  },
+  snippet = {
+    expand = function(args)
+      luasnip.lsp_expand(args.body)
+    end,
+  },
+  completion = {
+    completeopt = 'menu,menuone,noinsert',
+    keyword_length = 2,
+  },
+  window = { -- 补窗口边框
+    completion = cmp.config.window.bordered(),
+    documentation = cmp.config.window.bordered(),
+  },
+  experimental = {
+    ghost_text = true,
+    native_menu = false,
+  },
+  mapping = {
+    ["<Esc>"] = cmp.mapping.close(),            -- 关闭补全窗口
+    ["<Tab>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_next_item()
+      elseif luasnip.expandable() then
+        luasnip.expand()
+      elseif jumpable() then
+        luasnip.jump(1)
+      elseif check_backspace() then
+        fallback()
+      elseif is_emmet_active() then
+        return vim.fn["cmp#complete"]()
+      else
+        fallback()
+      end
+    end, {
+      "i",
+      "s",
+    }),
+    ["<S-Tab>"] = cmp.mapping(function(fallback)
+      if cmp.visible() then
+        cmp.select_prev_item()
+      elseif jumpable(-1) then
+        luasnip.jump(-1)
+      else
+        fallback()
+      end
+    end, {
+      "i",
+      "s",
+    }),
+    ["<CR>"] = cmp.mapping(function(fallback)
+      if cmp.visible() and cmp.confirm({select = true}) then
+        if jumpable() then
+          luasnip.jump(1)
+        end
+        return
+      end
+
+      if jumpable() then
+        if not luasnip.jump(1) then
+          fallback()
+        end
+      else
+        fallback()
+      end
+    end),
+  },
+  sources = {
+    { name = 'nvim_lsp' },
+    { name = 'treesitter' },
+    { name = 'buffer' },
+    { name = 'path' },
+    { name = 'luasnip' },
+    { name = 'orgmode'},
+  },
+  formatting = {
+    format = lspkind.cmp_format({with_text = true, maxwidth = 50}), -- lspkind
+  },
+}

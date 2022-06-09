@@ -1,11 +1,8 @@
 require('orgmode').setup_ts_grammar()
 
-local global = require('core.global')
-local keymap = require(global.mapping_bind)
+local func = require('core.func')
 
-local set_map = keymap.set_map
-
-set_map('n','\\t=','<Esc>ggvG=',{noremap = true})
+func.set_map('n','\\t=','<Esc>ggvG=',{noremap = true})
 
 require'nvim-treesitter.configs'.setup {
   ------ 启动代码高亮

@@ -1,6 +1,12 @@
+local global = require('core.global')
+
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.completion.completionItem.snippetSupport = true
+capabilities = require('cmp_nvim_lsp').update_capabilities(capabilities)
+
 require'lspconfig'.clangd.setup({
   cmd = {
-    cmd.clangd,
+    global.lsp.clangd,
     "--background-index",
     "--compile-commands-dir=build",
     "-j=12",
@@ -17,4 +23,5 @@ require'lspconfig'.clangd.setup({
     clangdFileStatus = true,
   },
   handlers = require "lsp-status".extensions.clangd.setup(),
+  capabilities = capabilities,
 })

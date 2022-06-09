@@ -1,18 +1,19 @@
 local global = require('core.global')
-local lsp = require('lsp.lsp')
-local plugins = require('lsp.config')
 
----------- 补全
-require('lsp.cmp')
+require('lsp.config')
 
----------- lsp
-lsp.jedi()          -- python
-lsp.lua()           -- lua
-lsp.clangd()        -- C/C++
-lsp.rust_analyzer() -- rust
+-- 补全
+require('lsp.plugins.cmp')
+-- 动作 UI
+require('lsp.plugins.spsaga')
+-- 参数列表
+require('lsp.plugins.symbols_outline')
+-- 错误列表
+require('lsp.plugins.trouble')
 
----------- other plugins
-plugins.lsp()
-plugins.spsaga()
-plugins.symbols_outline()
-plugins.trouble()
+-- lsp
+require('lsp.lsp.c')
+require('lsp.lsp.lua')
+require('lsp.lsp.python')
+--require('lsp.lsp.rust')
+--require('lsp.lsp.csharp')

@@ -1,9 +1,9 @@
 local global = require('core.global')
-local keymap = require(global.mapping_bind)
+local func = require('core.func')
 
-local setmap = keymap.set_map
-
+-- 安装路径
 vim.g.glow_binary_path = global.data .. "markdown/glow/"
+-- 设置边框
 vim.g.glow_border = "rounded"
 
-setmap('n', '\\pg', '<CMD>Glow<CR>', {noremap = true})
+func.set_map('n', '\\pg', '<CMD>Glow<CR>', {noremap = true})
