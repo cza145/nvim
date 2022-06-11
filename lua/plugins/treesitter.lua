@@ -77,6 +77,7 @@ require'nvim-treesitter.configs'.setup {
       },
     },
   },
+  tree_docs = {enable = true},
   ---- 彩虹括号
   rainbow = {
     enable = true,

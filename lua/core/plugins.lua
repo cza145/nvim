@@ -60,11 +60,17 @@ return require('packer').startup({
     use { 'michaelb/sniprun',     -- 执行代码块（暂未配置）
       run = 'bash ./install.sh'}
 
+    -- 折叠
+    use{ 'anuvyklack/pretty-fold.nvim',
+      requires = {'anuvyklack/nvim-keymap-amend'}
+    }
+
     -- tree-sitter
     use {'nvim-treesitter/nvim-treesitter',
       requires = {
         'p00f/nvim-ts-rainbow', -- 彩虹括号
         'nvim-treesitter/nvim-treesitter-refactor', -- 智能定义
+        'nvim-treesitter/nvim-tree-docs',
       },
       run = ":TSUpdate"
     }
