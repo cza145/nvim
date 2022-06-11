@@ -34,7 +34,6 @@ return require('packer').startup({
     use 'akinsho/bufferline.nvim'       -- buffer栏
     use "ellisonleao/glow.nvim"         -- 终端浏览markdown
     use 'folke/todo-comments.nvim'      -- TODO
-    use 'sunjon/stylish.nvim'           -- UI
     use 'lyokha/vim-xkbswitch'          -- 中文切换
 
     use 'nathom/filetype.nvim'          -- 加快打开文件速度
