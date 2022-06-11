@@ -13,11 +13,12 @@ function global:load_variables()
   self.is_windows = os_name == 'Windows'
 
   -- data 路径
-  self.data       = data .. '/'             -- 用于存放数据文件
-  self.cache_dir  = data .. '.cache/'       -- 用于存放数据文件
-  self.directory  = data .. 'site/pack/packer/opt/'   -- 插件路径
-  self.lsp_path   = data .. 'lsp_servers/'  -- lsp  路径
-  self.debug_path = data .. 'debug/'        -- debug 路径
+  self.data          = data .. '/'             -- 用于存放数据文件
+  self.cache_dir     = data .. '.cache/'       -- 用于存放缓存文件
+  self.directory     = data .. 'site/pack/packer/opt/' -- 插件路径
+  self.packer_start  = data .. 'site/pack/packer/start/' -- 插件路径
+  self.lsp_path      = data .. 'lsp_servers/'  -- lsp 路径
+  self.debug_path    = data .. 'debug/'        -- debug 路径
 
   self.XkbSwitchLib_path = '/usr/local/lib/libInputSourceSwitcher.dylib'
 

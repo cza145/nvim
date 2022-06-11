@@ -12,4 +12,3 @@ vim.g.symbols_outline = {
   },
 }
 func.set_map('n','\\ls', '<CMD>SymbolsOutline<CR>', {noremap = true})
-func.set_map('n','<M-7>', '<CMD>SymbolsOutline<CR>', {noremap = true})

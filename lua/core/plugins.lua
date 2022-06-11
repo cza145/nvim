@@ -95,8 +95,9 @@ return require('packer').startup({function()
       'hrsh7th/cmp-emoji',    -- emoji补全
       'hrsh7th/cmp-buffer',   -- buffer补全
       'hrsh7th/cmp-path',     -- 路径补全
-      'L3MON4D3/LuaSnip',     -- 模板
-      'saadparwaiz1/cmp_luasnip',
+      'L3MON4D3/LuaSnip',     -- 模板引擎
+      'saadparwaiz1/cmp_luasnip', -- 结合 cmp
+      'rafamadriz/friendly-snippets', -- 模板
       'hrsh7th/cmp-nvim-lsp', -- lsp
       'onsails/lspkind-nvim', -- 补全窗口主题
       'quangnguyen30192/cmp-nvim-tags', -- tags 补全

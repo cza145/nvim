@@ -4,6 +4,7 @@ require('lsp.config')
 
 -- 补全
 require('lsp.plugins.cmp')
+require('lsp.plugins.luasnip')
 -- 动作 UI
 require('lsp.plugins.lspsaga')
 -- 参数列表
