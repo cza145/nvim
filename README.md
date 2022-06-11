@@ -21,5 +21,5 @@
 * 需要使用特定字体 [nvim-web-devicons](https://github.com/kyazdani42/nvim-web-devicons) ，否则一些特殊字符会显示不正常
 * 安装 python 并安装 Python 依赖
   * `python3 -m pip install --user --upgrade pynvim`
-* 安装 [Glow](https://github.com/charmbracelet/glow)，并添加到环境。浏览 markdown
+* 安装 [Glow](https://github.com/charmbracelet/glow)，浏览 markdown
 * 安装中英文切换插件的依赖(仅适用macos) [input-source-switcher](https://github.com/vovkasm/input-source-switcher)
