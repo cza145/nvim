@@ -4,9 +4,10 @@ require('orgmode').setup_ts_grammar()
 
 require('orgmode').setup({
   org_agenda_files = {
-    global.data .. 'org/Dropbox/org/*',
-    global.data .. 'org/my-orgs/**/*'},
-  org_default_notes_file = global.data .. 'org/Dropbox/org/refile.org',
+    global.org_dropbox,
+    global.org_my_orgs
+  },
+  org_default_notes_file = global.org_refile,
 })
 
 -- TODO

@@ -1,9 +1,8 @@
 local global = {}
 
---local home = os.getenv("HOME")
---local path_sep = global.is_windows and '\\' or '/'
 local data = vim.fn.stdpath('data') -- 用于存放数据文件
-local os_name = vim.loop.os_uname().sysname
+local packer = data .. 'site/pack/packer/' -- 插件路径
+local os_name = vim.loop.os_uname().sysname -- 系统名
 
 function global:load_variables()
 
@@ -12,15 +11,27 @@ function global:load_variables()
   self.is_linux   = os_name == 'Linux'
   self.is_windows = os_name == 'Windows'
 
-  -- data 路径
-  self.data          = data .. '/'             -- 用于存放数据文件
-  self.cache_dir     = data .. '.cache/'       -- 用于存放缓存文件
-  self.directory     = data .. 'site/pack/packer/opt/' -- 插件路径
-  self.packer_start  = data .. 'site/pack/packer/start/' -- 插件路径
-  self.lsp_path      = data .. 'lsp_servers/'  -- lsp 路径
-  self.debug_path    = data .. 'debug/'        -- debug 路径
+  -- 用于存放缓存文件
+  self.cache_dir     = data .. '.cache/'
 
+  -- 插件路径
+  self.directory     = packer .. 'opt/'
+
+  -- lsp 安装路径
+  self.lsp_path      = data .. 'lsp_servers/'
+  -- debug 安装路径
+  self.debug_path    = data .. 'debug/'
+
+  -- XkbSwitchLib
   self.XkbSwitchLib_path = '/usr/local/lib/libInputSourceSwitcher.dylib'
+  -- friendly-snippets
+  self.friendly_snippets = packer .. 'start/friendly_snippets'
+  -- glow
+  self.glow = data .. 'markdown/glow/'
+  -- org
+  self.org_dropbox = data .. 'org/Dropbox/org/*'
+  self.org_my_orgs = data .. 'org/my-orgs/**/*'
+  self.org_refile  = data .. 'org/Dropbox/org/refile.org'
 
   -- lsp 参数
   self.lsp = {
