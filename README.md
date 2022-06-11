@@ -2,7 +2,7 @@
 
 * 注意此配置主要在 macos 上使用，在其它系统下一些路径可能不同。
   * 在 `lua/core/global.lua` 中可修改所有参数
-* 添加了 neovide 配置，即 GUI，需要安装 neovide
+* 添加了 [neovide](https://github.com/neovide/neovide) 配置
   * 可在 `lua/core/neovide.lua` 中修改其配置
 * 目前 debug 使用 [vimspector](https://github.com/puremourning/vimspector), 后续将换到 [nvim-dap](https://github.com/mfussenegger/nvim-dap)
 * 插件列表在 `lua/core/plugins`
