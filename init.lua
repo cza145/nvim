@@ -1,5 +1,5 @@
 -- Leader
---vim.g.mapleader = "e";
+vim.g.mapleader = "\\";
 
 require('core.options')     -- 基本设置
 require('core.packer')      -- 插件管理器

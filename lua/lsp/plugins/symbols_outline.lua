@@ -11,4 +11,4 @@ vim.g.symbols_outline = {
     rename_symbol = "r",
   },
 }
-func.set_map('n','\\ls', '<CMD>SymbolsOutline<CR>', {noremap = true})
+func.set_map('n','<Leader>ls', '<CMD>SymbolsOutline<CR>', {noremap = true})

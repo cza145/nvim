@@ -6,14 +6,14 @@ vim.g.vimspector_base_dir = global.debug_path .. "vimspector/"
 -- 键位设置
 vim.g.vimspector_enable_mappings = 'VISUAL_STUDIO'
 local vimspector_map = {
-  {'n', '\\ds', '<Plug>VimspectorContinue'},
-  {'n', '\\dp', '<Plug>VimspectorStop'},
-  {'n', '\\dr', '<Plug>VimspectorRestart'},
-  {'n', '\\db', '<Plug>VimspectorToggleBreakpoint'},
-  {'n', '\\dt', '<Plug>VimspectorRunToCursor'},
-  {'n', '\\dq', '<Plug>VimspectorOver'},
-  {'n', '\\di', '<Plug>VimspectorStepInto'},
-  {'n', '\\do', '<Plug>VimspectorStepOut'},
+  {'n', '<Leader>ds', '<Plug>VimspectorContinue'},
+  {'n', '<Leader>dp', '<Plug>VimspectorStop'},
+  {'n', '<Leader>dr', '<Plug>VimspectorRestart'},
+  {'n', '<Leader>db', '<Plug>VimspectorToggleBreakpoint'},
+  {'n', '<Leader>dt', '<Plug>VimspectorRunToCursor'},
+  {'n', '<Leader>dq', '<Plug>VimspectorOver'},
+  {'n', '<Leader>di', '<Plug>VimspectorStepInto'},
+  {'n', '<Leader>do', '<Plug>VimspectorStepOut'},
 }
 
 -- setmap不起作用，暂时用cmd替换

@@ -2,7 +2,7 @@ require('orgmode').setup_ts_grammar()
 
 local func = require('core.func')
 
-func.set_map('n','\\t=','<Esc>ggvG=',{noremap = true})
+func.set_map('n','<Leader>t=','<Esc>ggvG=',{noremap = true})
 
 require'nvim-treesitter.configs'.setup {
   ------ 启动代码高亮
@@ -73,7 +73,7 @@ require'nvim-treesitter.configs'.setup {
     smart_rename = {
       enable = true,
       keymaps = { -- 设置键位
-        smart_rename = "\\tr",
+        smart_rename = "<Leader>tr",
       },
     },
   },

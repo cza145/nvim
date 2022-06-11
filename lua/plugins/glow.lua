@@ -6,4 +6,4 @@ vim.g.glow_binary_path = global.glow
 -- 设置边框
 vim.g.glow_border = "rounded"
 
-func.set_map('n', '\\pg', '<CMD>Glow<CR>', {noremap = true})
+func.set_map('n', '<Leader>pg', '<CMD>Glow<CR>', {noremap = true})

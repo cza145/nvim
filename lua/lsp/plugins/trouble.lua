@@ -1,6 +1,6 @@
 local func = require('core.func')
 
-func.set_map('n','\\lt', '<CMD>TroubleToggle<CR>', {noremap = true})
+func.set_map('n','<Leader>lt', '<CMD>TroubleToggle<CR>', {noremap = true})
 
 require("trouble").setup {
   action_keys = {
@@ -16,7 +16,7 @@ require("trouble").setup {
     hover = "K",
     preview = "p",
     close_folds = {"zM", "zm"},
-    open_folds = {"zR", "zr"},
+    open_folds  = {"zR", "zr"},
     toggle_fold = {"zA", "za"},
     previous = "k",
     next = "j"

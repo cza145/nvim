@@ -17,12 +17,12 @@ local theme = 'dropdown'
 
 -- 设置键位
 local telescope_map = {
-  {'n',  '\\ss','builtin'},    -- 打开 telescope
-  {'n',  '\\sf','find_files'}, -- 搜索文件
-  {'n',  '\\sg','live_grep'},  -- 搜索字符
-  {'n',  '\\sb','buffers'},    -- 搜索buffer
-  {'n',  '\\sh','help_tags'},  -- 搜索帮助
-  {'n',  '\\so','oldfiles'},   -- 搜索最近文件
+  {'n',  '<Leader>ss','builtin'},    -- 打开 telescope
+  {'n',  '<Leader>sf','find_files'}, -- 搜索文件
+  {'n',  '<Leader>sg','live_grep'},  -- 搜索字符
+  {'n',  '<Leader>sb','buffers'},    -- 搜索buffer
+  {'n',  '<Leader>sh','help_tags'},  -- 搜索帮助
+  {'n',  '<Leader>so','oldfiles'},   -- 搜索最近文件
 }
 
 for _,m in ipairs(telescope_map) do

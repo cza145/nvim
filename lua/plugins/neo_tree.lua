@@ -13,4 +13,4 @@ require("neo-tree").setup({
   }
 })
 
-func.set_map('n','\\1','<CMD>:NeoTreeFloatToggle<CR>',{noremap = true})
+func.set_map('n','<Leader>b','<CMD>:NeoTreeFloatToggle<CR>',{noremap = true})
