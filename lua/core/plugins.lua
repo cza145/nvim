@@ -16,7 +16,7 @@ return require('packer').startup({
     -- packer
     use {'wbthomason/packer.nvim', opt = true}
 
-    -------- theme
+    -- theme
     use 'yuttie/hydrangea-vim'
     use 'Shatur/neovim-ayu'
     use 'Th3Whit3Wolf/one-nvim'
