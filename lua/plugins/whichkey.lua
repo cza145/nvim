@@ -24,6 +24,7 @@ require("which-key").register({
   ["<Leader>sb"]  = { name = "Search Buffer" },
   ["<Leader>sh"]  = { name = "Search Help" },
   ["<Leader>so"]  = { name = "Search oldfile" },
+  ["<Leader>sd"]  = { name = "Search diagnostics" },
   ["<Leader>l"]   = { name = "lsp+" },
   ["<Leader>ls"]  = { name = "SymbolsOutline"},
   ["<Leader>lt"]  = { name = "Trouble"},

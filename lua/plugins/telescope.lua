@@ -23,6 +23,7 @@ local telescope_map = {
   {'n',  '<Leader>sb','buffers'},    -- 搜索buffer
   {'n',  '<Leader>sh','help_tags'},  -- 搜索帮助
   {'n',  '<Leader>so','oldfiles'},   -- 搜索最近文件
+  {'n',  '<Leader>sd','diagnostics'},   -- 搜索警告错误
 }
 
 for _,m in ipairs(telescope_map) do
