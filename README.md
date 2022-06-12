@@ -12,6 +12,7 @@
   * `Python`
   * `Lua`
   * `Rust`
+* 如果使用 `telescope` 搜索卡顿，可以在 `lua/plugins/telescope.lua` 里将 `preview = false`
 
 ### 安装依赖
 

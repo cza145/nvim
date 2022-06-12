@@ -19,7 +19,7 @@ cmp.setup {
   },
   completion = {
     completeopt = 'menu,menuone,noinsert',
-    keyword_length = 2,
+    keyword_length = 1,
   },
   window = { -- 补窗口边框
     completion = cmp.config.window.bordered(),

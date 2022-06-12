@@ -8,7 +8,7 @@ require('telescope').setup {
     file_ignore_patterns = { -- 忽略以下文件
       "./.git/*",
     },
-    preview = false, -- 文件内容浏览
+    --preview = false, -- 文件内容浏览
   },
 }
 
