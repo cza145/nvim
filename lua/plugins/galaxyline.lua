@@ -58,7 +58,10 @@ local present1, gl = pcall(require, 'galaxyline')
   insert_left {
     Space = {
       provider = function () return ' ' end,
-      highlight = {colors.line_bg,colors.line_bg}
+      highlight = {
+        colors.line_bg,
+        --colors.line_bg
+      }
     }
   }
   end
@@ -74,7 +77,10 @@ local present1, gl = pcall(require, 'galaxyline')
   insert_right {
     Space = {
       provider = function () return ' ' end,
-      highlight = {colors.line_bg,colors.line_bg}
+      highlight = {
+        colors.line_bg,
+        --colors.line_bg
+      }
     }
   }
   end
@@ -137,7 +143,10 @@ local present1, gl = pcall(require, 'galaxyline')
         vim.api.nvim_command('hi GalaxyViMode guifg='..mode_color[vim_mode])
         return alias[vim_mode]
       end,
-      highlight = {colors.line_bg, colors.line_bg},
+      highlight = {
+        colors.line_bg,
+        --colors.line_bg
+      },
     },
   }
 
@@ -147,7 +156,10 @@ local present1, gl = pcall(require, 'galaxyline')
   insert_left{
     FileIcon = {
       provider = 'FileIcon',
-      highlight = {require('galaxyline.provider_fileinfo').get_file_icon_color,colors.line_bg},
+      highlight = {require(
+        'galaxyline.provider_fileinfo').get_file_icon_color,
+        --colors.line_bg
+      },
     },
   }
 
@@ -157,8 +169,14 @@ local present1, gl = pcall(require, 'galaxyline')
     LineInfo = {
       provider = 'LineColumn',
       separator = '',
-      separator_highlight = {colors.green, colors.line_bg},
-      highlight = {colors.fg,colors.line_bg},
+      separator_highlight = {
+        colors.green,
+        --colors.line_bg
+      },
+      highlight = {
+        colors.fg,
+        --colors.line_bg
+      },
     },
   }
 
@@ -166,16 +184,30 @@ local present1, gl = pcall(require, 'galaxyline')
     PerCent = {
       provider = 'LinePercent',
       separator = '',
-      separator_highlight = {colors.blue,colors.line_bg},
-      highlight = {colors.cyan, colors.line_bg,'bold'},
+      separator_highlight = {
+        colors.blue,
+        --colors.line_bg
+      },
+      highlight = {
+        colors.cyan,
+        --colors.line_bg,
+        'bold'
+      },
     }
   }
 
   insert_left{
     Encode = {
       provider = 'FileEncode',
-      separator_highlight = {colors.blue,colors.line_bg},
-      highlight = {colors.cyan, colors.line_bg,'bold'},
+      separator_highlight = {
+        colors.blue,
+        --colors.line_bg
+      },
+      highlight = {
+        colors.cyan,
+        --colors.line_bg,
+        'bold'
+      },
     }
   }
 
@@ -185,7 +217,10 @@ local present1, gl = pcall(require, 'galaxyline')
     GitIcon = {
       provider = function() return '  ' end,
       condition = require('galaxyline.provider_vcs').check_git_workspace,
-      highlight = {colors.orange,colors.line_bg},
+      highlight = {
+        colors.orange,
+        --colors.line_bg
+      },
     }
   }
 
@@ -193,7 +228,11 @@ local present1, gl = pcall(require, 'galaxyline')
     GitBranch = {
       provider = 'GitBranch',
       condition = require('galaxyline.provider_vcs').check_git_workspace,
-      highlight = {'#8FBCBB',colors.line_bg,'bold'},
+      highlight = {
+        '#8FBCBB',
+        --colors.line_bg,
+        'bold'
+      },
     }
   }
 
@@ -202,7 +241,10 @@ local present1, gl = pcall(require, 'galaxyline')
     DiagnosticError = {
       provider = 'DiagnosticError',
       icon = '  ',
-      highlight = {colors.red,colors.line_bg}
+      highlight = {
+        colors.red,
+        --colors.line_bg
+      }
     }
   }
 
@@ -210,6 +252,9 @@ local present1, gl = pcall(require, 'galaxyline')
     DiagnosticWarn = {
       provider = 'DiagnosticWarn',
       icon = '  ',
-      highlight = {colors.yellow,colors.line_bg},
+      highlight = {
+        colors.yellow,
+        --colors.line_bg
+      },
     }
   }

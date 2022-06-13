@@ -15,56 +15,56 @@ require("bufferline").setup{
   highlights = {
     fill = {
       guifg = '#70C0BA',
-      guibg = '#FFFFFF',
+      --guibg = '#FFFFFF',
     },
     background = {
       guifg = '#70C0BA',
-      guibg = '#FFFFFF',
+      --guibg = '#FFFFFF',
     },
     tab = {
       guifg = '#70C0BA',
-      guibg = '#FFFFFF',
+      --guibg = '#FFFFFF',
     },
     tab_selected = {
       guifg = '#00868B',
-      guibg = '#FFFFFF',
+      --guibg = '#FFFFFF',
     },
     tab_close = {
       guifg = '#70C0BA',
-      guibg = '#FFFFFF'
+      --guibg = '#FFFFFF'
     },
     close_button = {
       guifg = '#70C0BA',
-      guibg = '#FFFFFF'
+      --guibg = '#FFFFFF'
     },
     close_button_visible = {
       guifg = '#70C0BA',
-      guibg = '#FFFFFF',
+      --guibg = '#FFFFFF',
     },
     close_button_selected = {
       guifg = '#00868B',
-      guibg = '#FFFFFF'
+      --guibg = '#FFFFFF'
     },
     buffer_visible = {
       guifg = '#70C0BA',
-      guibg = '#FFFFFF'
+      --guibg = '#FFFFFF'
     },
     buffer_selected = {
       guifg = '#00868B',
-      guibg = '#FFFFFF',
+      --guibg = '#FFFFFF',
       gui = "bold,italic"
     },
     separator_selected = {
       guifg = '#00868B',
-      guibg = '#FFFFFF'
+      --guibg = '#FFFFFF'
     },
     separator_visible = {
       guifg = '#00868B',
-      guibg = '#FFFFFF'
+      --guibg = '#FFFFFF'
     },
     separator = {
       guifg = '#00868B',
-      guibg = '#FFFFFF'
+      --guibg = '#FFFFFF'
     },
   }
 }
