@@ -22,6 +22,7 @@ return require('packer').startup({
     use 'Th3Whit3Wolf/one-nvim'
     use 'NTBBloodbath/doom-one.nvim'
     use "EdenEast/nightfox.nvim"
+    use 'numToStr/Sakura.nvim'
 
     use 'kyazdani42/nvim-web-devicons'  -- 图标，状态栏使用
     use 'nvim-lua/plenary.nvim'         -- 搜索等依赖插件
