@@ -12,7 +12,7 @@ if not packer_exists then
   local git_clone_cmd = vim.fn.system(string.format(
   'git clone --depth 1 %s %s',
   'https://github.com/wbthomason/packer.nvim',
-  global.directory .. '/packer.nvim'
+  global.directory .. 'packer.nvim'
   ))
   print(git_clone_cmd)
   print("Installing packer.nvim...")

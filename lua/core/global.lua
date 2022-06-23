@@ -1,6 +1,6 @@
 local global = {}
 
-local data = vim.fn.stdpath('data') -- 用于存放数据文件
+local data = vim.fn.stdpath('data') .. '/' -- 用于存放数据文件
 local packer = data .. 'site/pack/packer/' -- 插件路径
 local os_name = vim.loop.os_uname().sysname -- 系统名
 
