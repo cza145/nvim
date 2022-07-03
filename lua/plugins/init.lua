@@ -4,6 +4,7 @@ local plugins_config_list = {
   'neogit',
   'galaxyline',
   'bufferline',
+  --'winbar',
   'colorizer',
   'glow',
   'orgmode',

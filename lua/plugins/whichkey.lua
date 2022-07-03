@@ -6,7 +6,7 @@ require("which-key").setup {
   },
   layout = {
     height = {
-      min = 4,
+      min = 2,
       max = 10
     },
   },

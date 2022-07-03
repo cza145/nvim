@@ -33,6 +33,7 @@ return require('packer').startup({
     use 't9md/vim-choosewin'            -- 多屏跳转以及切换标签
     use 'glepnir/galaxyline.nvim'       -- 状态栏
     use 'akinsho/bufferline.nvim'       -- buffer栏
+    --use 'fgheng/winbar.nvim'            -- buffer栏
     use "ellisonleao/glow.nvim"         -- 终端浏览markdown
     use 'folke/todo-comments.nvim'      -- TODO
     use 'lyokha/vim-xkbswitch'          -- 中文切换
@@ -102,6 +103,8 @@ return require('packer').startup({
     --    'rcarriga/nvim-dap-ui',
     --    'Pocco81/dap-buddy.nvim',
     --    'theHamsta/nvim-dap-virtual-text',
+    --    'rcarriga/vim-ultest',
+    --    'scalameta/nvim-metals',
     --    'mfussenegger/nvim-dap-python', --python
     --  }
     --}

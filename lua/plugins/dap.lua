@@ -5,15 +5,6 @@ local path = global.debug_path
 local dap   = require("dap")
 local dapui = require('dapui')
 
--- 加载调试器配置
-local dap_config = {
-    --python = require("dap.python"),
-}
-for dap_name, dap_options in pairs(dap_config) do
-    dap.adapters[dap_name] = dap_options.adapters
-    dap.configurations[dap_name] = dap_options.configurations
-end
-
 -- 图标设置
 vim.fn.sign_define(
   'DapBreakpoint',
