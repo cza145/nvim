@@ -14,6 +14,12 @@
   * `Rust`
 * 如果使用 `telescope` 搜索卡顿，可以在 `lua/plugins/telescope.lua` 里将 `preview = false`
 
+### 键位说明
+
+* `Leader`键为`\`
+* 所有插件功能均绑定在`Leader`键上
+* 内置功能绑定在`Space`上，配置文件在`lua/core/mapping.lua`
+
 ### 安装依赖
 
 * 安装 lsp
