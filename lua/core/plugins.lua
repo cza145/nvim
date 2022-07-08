@@ -48,19 +48,6 @@ return require('packer').startup({
       },
     }
 
-    -- org mode
-    use {'nvim-orgmode/orgmode',
-      requires = {
-        'dhruvasagar/vim-table-mode',
-        'lukas-reineke/headlines.nvim',
-        'akinsho/org-bullets.nvim',
-        'michaelb/sniprun',
-      }
-    }
-
-    use { 'michaelb/sniprun',     -- 执行代码块（暂未配置）
-      run = 'bash ./install.sh'}
-
     -- 折叠
     use{ 'anuvyklack/pretty-fold.nvim',
       requires = {'anuvyklack/nvim-keymap-amend'}

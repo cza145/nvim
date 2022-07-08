@@ -7,7 +7,6 @@ local plugins_config_list = {
   --'winbar',
   'colorizer',
   'glow',
-  'orgmode',
   'vimspector',
   --'dap',
   'treesitter',

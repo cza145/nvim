@@ -1,5 +1,3 @@
-require('orgmode').setup_ts_grammar()
-
 local func = require('core.func')
 
 func.set_map('n','<Leader>t=','<Esc>ggvG=',{noremap = true})
@@ -47,7 +45,6 @@ require'nvim-treesitter.configs'.setup {
     'llvm',
     'lua',
     'markdown',
-    'org',
     'query',
     'rst',
     'rust',
