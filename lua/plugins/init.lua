@@ -3,7 +3,7 @@
 local plugins_config_list = {
   'neogit',
   'galaxyline',
-  'bufferline',
+  --'bufferline',
   --'winbar',
   'colorizer',
   'glow',
